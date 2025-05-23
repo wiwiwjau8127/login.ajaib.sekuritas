@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Ajaib Sekuritas</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Background image */
+    img.bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0;
+      animation: fadeIn 1s forwards ease-in;
+    }
+
+    /* Loading GIF container */
+    .loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      animation: fadeIn 1.5s forwards ease-in;
+      animation-delay: 0.5s;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .loading img {
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = "halaman-login.html";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <!-- Background -->
+  <img src="https://i.imghippo.com/files/BrHZ8346Fic.jpg" class="bg" alt="Background" loading="eager" />
+  </div>
+</body>
+</html>
